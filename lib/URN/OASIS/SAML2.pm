@@ -1,6 +1,6 @@
 # vim: tw=120
 package URN::OASIS::SAML2;
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 use warnings;
 use strict;
 
