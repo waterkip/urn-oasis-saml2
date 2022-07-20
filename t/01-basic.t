@@ -19,8 +19,8 @@ my @export_tags = qw(
 cmp_deeply([sort keys %URN::OASIS::SAML2::EXPORT_TAGS], \@export_tags,                   "We export all our tags");
 cmp_deeply($URN::OASIS::SAML2::EXPORT_TAGS{all},        [@URN::OASIS::SAML2::EXPORT_OK], "All exports everything");
 
-my $saml2   = 'urn:oasis:names:tc:SAML::2.0:';
-my $saml1_1 = 'urn:oasis:names:tc:SAML::1.1:';
+my $saml2   = 'urn:oasis:names:tc:SAML:2.0:';
+my $saml1_1 = 'urn:oasis:names:tc:SAML:1.1:';
 
 my %exports = (
     BINDING_HTTP_POST     => $saml2 . 'bindings:HTTP-POST',

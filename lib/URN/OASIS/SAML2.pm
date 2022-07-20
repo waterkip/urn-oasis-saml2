@@ -60,8 +60,8 @@ our %EXPORT_TAGS = (
 );
 
 use constant base    => 'urn:oasis:names:tc:SAML:';
-use constant saml2   => base . ':2.0:';
-use constant saml1_1 => base . ':1.1:';
+use constant saml2   => base . '2.0:';
+use constant saml1_1 => base . '1.1:';
 
 use constant URN_ASSERTION => saml2 . 'assertion';
 use constant NS_ASSERTION  => 'saml';

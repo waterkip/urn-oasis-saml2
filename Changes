@@ -2,6 +2,8 @@ Revision history for URN-OASIS-SAML2
 
 {{$NEXT}}
 
+    * Fix doublice ':' bug in binding constants
+
 0.001     2022-07-19 21:08:31Z
 
     * Initial release
