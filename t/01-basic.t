@@ -53,9 +53,11 @@ my %exports = (
     URN_PROTOCOL_LOGOUT_REQUEST    => $saml2 . 'protocol' . ':LogoutRequest',
     URN_PROTOCOL_RESPONSE          => $saml2 . 'protocol' . ':Response',
 
-    NAMEID_EMAIL      => $saml1_1 . 'nameid-format:emailAddress',
-    NAMEID_TRANSIENT  => $saml1_1 . 'nameid-format:transient',
-    NAMEID_PERSISTENT => $saml1_1 . 'nameid-format:persistent',
+    NAMEID_FORMAT        => $saml1_1 . 'nameid-format',
+    NAMEID_FORMAT_ENTITY => $saml1_1 . 'nameid-format-entity',
+    NAMEID_EMAIL         => $saml1_1 . 'nameid-format:emailAddress',
+    NAMEID_TRANSIENT     => $saml1_1 . 'nameid-format:transient',
+    NAMEID_PERSISTENT    => $saml1_1 . 'nameid-format:persistent',
 );
 
 my @exports = sort keys %exports;

@@ -27,6 +27,8 @@ my @classes = qw(
 );
 
 my @nameids = qw(
+    NAMEID_FORMAT
+    NAMEID_FORMAT_ENTITY
     NAMEID_EMAIL
     NAMEID_TRANSIENT
     NAMEID_PERSISTENT
@@ -99,9 +101,12 @@ use constant CLASS_M2FA_CONTRACT      => saml2 . 'ac:classes:MobileTwoFactorCont
 use constant CLASS_SMARTCARD          => saml2 . 'ac:classes:Smartcard';
 use constant CLASS_SMARTCARD_PKI      => saml2 . 'ac:classes:SmartcardPKI';
 
-use constant NAMEID_EMAIL      => saml1_1 . 'nameid-format:emailAddress';
-use constant NAMEID_TRANSIENT  => saml1_1 . 'nameid-format:transient';
-use constant NAMEID_PERSISTENT => saml1_1 . 'nameid-format:persistent';
+use constant NAMEID_FORMAT        => saml1_1 . 'nameid-format';
+use constant NAMEID_FORMAT_ENTITY => saml1_1 . 'nameid-format-entity';
+use constant NAMEID_EMAIL         => saml1_1 . 'nameid-format:emailAddress';
+use constant NAMEID_TRANSIENT     => saml1_1 . 'nameid-format:transient';
+use constant NAMEID_PERSISTENT    => saml1_1 . 'nameid-format:persistent';
+
 
 1;
 
