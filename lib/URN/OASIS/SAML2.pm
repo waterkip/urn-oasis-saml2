@@ -38,6 +38,9 @@ my @urn = qw(
     URN_PROTOCOL
     URN_SIGNATURE
     URN_ENCRYPTION
+    URN_PROTOCOL_ARTIFACT_RESPONSE
+    URN_PROTOCOL_LOGOUT_REQUEST
+    URN_PROTOCOL_RESPONSE
 );
 
 my @ns = qw(
@@ -78,6 +81,9 @@ use constant NS_SIGNATURE  => 'ds';
 use constant URN_ENCRYPTION => 'http://www.w3.org/2001/04/xmlenc#';
 use constant NS_ENCRYPTION  => 'xenc';
 
+use constant URN_PROTOCOL_ARTIFACT_RESPONSE => URN_PROTOCOL . ':ArtifactResponse';
+use constant URN_PROTOCOL_LOGOUT_REQUEST    => URN_PROTOCOL . ':LogoutRequest';
+use constant URN_PROTOCOL_RESPONSE          => URN_PROTOCOL . ':Response';
 
 use constant BINDING_HTTP_POST     => saml2 . 'bindings:HTTP-POST';
 use constant BINDING_HTTP_ARTIFACT => saml2 . 'bindings:HTTP-Artifact';

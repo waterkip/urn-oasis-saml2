@@ -49,6 +49,10 @@ my %exports = (
     URN_SIGNATURE  => 'http://www.w3.org/2000/09/xmldsig#',
     URN_ENCRYPTION => 'http://www.w3.org/2001/04/xmlenc#',
 
+    URN_PROTOCOL_ARTIFACT_RESPONSE => $saml2 . 'protocol' . ':ArtifactResponse',
+    URN_PROTOCOL_LOGOUT_REQUEST    => $saml2 . 'protocol' . ':LogoutRequest',
+    URN_PROTOCOL_RESPONSE          => $saml2 . 'protocol' . ':Response',
+
     NAMEID_EMAIL      => $saml1_1 . 'nameid-format:emailAddress',
     NAMEID_TRANSIENT  => $saml1_1 . 'nameid-format:transient',
     NAMEID_PERSISTENT => $saml1_1 . 'nameid-format:persistent',
