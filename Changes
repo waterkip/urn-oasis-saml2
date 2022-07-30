@@ -1,6 +1,6 @@
 Revision history for URN-OASIS-SAML2
 
-{{$NEXT}}
+0.003     2022-07-30 16:17:14Z
 
     * Add new constants for nameid's and status
     * Rename bindings and classes to singular form in export
