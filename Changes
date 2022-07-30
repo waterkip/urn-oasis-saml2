@@ -2,6 +2,10 @@ Revision history for URN-OASIS-SAML2
 
 {{$NEXT}}
 
+    * Add new constants for nameid's and status
+    * Rename bindings and classes to singular form in export
+      Plural form is still supported
+
 0.002     2022-07-20 21:22:58Z
 
     * Fix doublice ':' bug in binding constants
