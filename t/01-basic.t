@@ -9,10 +9,13 @@ is(@URN::OASIS::SAML2::EXPORT, 0, "We don't export things by default");
 
 my @export_tags = qw(
     all
+    binding
     bindings
+    class
     classes
     nameid
     ns
+    status
     urn
 );
 
@@ -58,6 +61,12 @@ my %exports = (
     NAMEID_EMAIL         => $saml1_1 . 'nameid-format:emailAddress',
     NAMEID_TRANSIENT     => $saml1_1 . 'nameid-format:transient',
     NAMEID_PERSISTENT    => $saml1_1 . 'nameid-format:persistent',
+
+    STATUS_AUTH_FAILED    => $saml2 . 'status:AuthnFailed',
+    STATUS_REQUESTER      => $saml2 . 'status:Requester',
+    STATUS_REQUEST_DENIED => $saml2 . 'status:RequestDenied',
+    STATUS_RESPONDER      => $saml2 . 'status:Responder',
+    STATUS_SUCCESS        => $saml2 . 'status:Success',
 );
 
 my @exports = sort keys %exports;

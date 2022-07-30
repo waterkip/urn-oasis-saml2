@@ -8,7 +8,7 @@ use strict;
 
 use Exporter qw(import);
 
-my @bindings = qw(
+my @binding = qw(
     BINDING_HTTP_POST
     BINDING_HTTP_ARTIFACT
     BINDING_HTTP_REDIRECT
@@ -17,7 +17,7 @@ my @bindings = qw(
     BINDING_REVERSE_SOAP
 );
 
-my @classes = qw(
+my @class = qw(
     CLASS_UNSPECIFIED
     CLASS_PASSWORD_PROTECTED
     CLASS_M2FA_UNREGISTERED
@@ -26,7 +26,7 @@ my @classes = qw(
     CLASS_SMARTCARD_PKI
 );
 
-my @nameids = qw(
+my @nameid = qw(
     NAMEID_FORMAT
     NAMEID_FORMAT_ENTITY
     NAMEID_EMAIL
@@ -53,15 +53,26 @@ my @ns = qw(
     NS_ENCRYPTION
 );
 
-our @EXPORT_OK = (@bindings, @classes, @nameids, @ns, @urn);
+my @status = qw(
+    STATUS_AUTH_FAILED
+    STATUS_REQUESTER
+    STATUS_REQUEST_DENIED
+    STATUS_RESPONDER
+    STATUS_SUCCESS
+);
+
+our @EXPORT_OK = (@binding, @class, @nameid, @ns, @urn, @status);
 
 our %EXPORT_TAGS = (
     all      => \@EXPORT_OK,
-    bindings => \@bindings,
-    classes  => \@classes,
-    nameid   => \@nameids,
+    bindings => \@binding,
+    binding  => \@binding,
+    classes  => \@class,
+    class    => \@class,
+    nameid   => \@nameid,
     urn      => \@urn,
     ns       => \@ns,
+    status   => \@status,
 );
 
 use constant base    => 'urn:oasis:names:tc:SAML:';
@@ -107,6 +118,11 @@ use constant NAMEID_EMAIL         => saml1_1 . 'nameid-format:emailAddress';
 use constant NAMEID_TRANSIENT     => saml1_1 . 'nameid-format:transient';
 use constant NAMEID_PERSISTENT    => saml1_1 . 'nameid-format:persistent';
 
+use constant STATUS_AUTH_FAILED    => saml2 . 'status:AuthnFailed';
+use constant STATUS_REQUESTER      => saml2 . 'status:Requester';
+use constant STATUS_REQUEST_DENIED => saml2 . 'status:RequestDenied';
+use constant STATUS_RESPONDER      => saml2 . 'status:Responder';
+use constant STATUS_SUCCESS        => saml2 . 'status:Success';
 
 1;
 
@@ -149,7 +165,7 @@ This module provides constants which are in use by the SAML2 implementation.
 
 =head2 bindings
 
-    use URN::OASIS::SAML2 qw(:bindings);
+    use URN::OASIS::SAML2 qw(:binding);
     use URN::OASIS::SAML2 qw(
         BINDING_HTTP_POST
         BINDING_HTTP_ARTIFACT
@@ -160,7 +176,7 @@ This module provides constants which are in use by the SAML2 implementation.
 
 =head2 classes
 
-    use URN::OASIS::SAML2 qw(:classes);
+    use URN::OASIS::SAML2 qw(:class);
     use URN::OASIS::SAML2 qw(
         CLASS_UNSPECIFIED
         CLASS_PASSWORD_PROTECTED
@@ -179,3 +195,13 @@ This module provides constants which are in use by the SAML2 implementation.
         NAMEID_PERSISTENT
     );
 
+=head2 status
+
+    use URN::OASIS::SAML2 qw(:status);
+    use URN::OASIS::SAML2 qw(
+        STATUS_AUTH_FAILED
+        STATUS_REQUESTER
+        STATUS_REQUEST_DENIED
+        STATUS_RESPONDER
+        STATUS_SUCCESS
+    );
