@@ -77,7 +77,6 @@ our %EXPORT_TAGS = (
 
 use constant base    => 'urn:oasis:names:tc:SAML:';
 use constant saml2   => base . '2.0:';
-use constant saml1_1 => base . '1.1:';
 
 use constant URN_ASSERTION => saml2 . 'assertion';
 use constant NS_ASSERTION  => 'saml';
@@ -112,11 +111,11 @@ use constant CLASS_M2FA_CONTRACT      => saml2 . 'ac:classes:MobileTwoFactorCont
 use constant CLASS_SMARTCARD          => saml2 . 'ac:classes:Smartcard';
 use constant CLASS_SMARTCARD_PKI      => saml2 . 'ac:classes:SmartcardPKI';
 
-use constant NAMEID_FORMAT        => saml1_1 . 'nameid-format';
-use constant NAMEID_FORMAT_ENTITY => saml1_1 . 'nameid-format-entity';
-use constant NAMEID_EMAIL         => saml1_1 . 'nameid-format:emailAddress';
-use constant NAMEID_TRANSIENT     => saml1_1 . 'nameid-format:transient';
-use constant NAMEID_PERSISTENT    => saml1_1 . 'nameid-format:persistent';
+use constant NAMEID_FORMAT        => saml2 . 'nameid-format';
+use constant NAMEID_FORMAT_ENTITY => saml2 . 'nameid-format-entity';
+use constant NAMEID_EMAIL         => saml2 . 'nameid-format:emailAddress';
+use constant NAMEID_TRANSIENT     => saml2 . 'nameid-format:transient';
+use constant NAMEID_PERSISTENT    => saml2 . 'nameid-format:persistent';
 
 use constant STATUS_AUTH_FAILED    => saml2 . 'status:AuthnFailed';
 use constant STATUS_REQUESTER      => saml2 . 'status:Requester';
