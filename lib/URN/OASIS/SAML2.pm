@@ -59,6 +59,7 @@ my @status = qw(
     STATUS_REQUEST_DENIED
     STATUS_RESPONDER
     STATUS_SUCCESS
+    STATUS_PARTIAL_LOGOUT
 );
 
 our @EXPORT_OK = (@binding, @class, @nameid, @ns, @urn, @status);
@@ -122,6 +123,7 @@ use constant STATUS_REQUESTER      => saml2 . 'status:Requester';
 use constant STATUS_REQUEST_DENIED => saml2 . 'status:RequestDenied';
 use constant STATUS_RESPONDER      => saml2 . 'status:Responder';
 use constant STATUS_SUCCESS        => saml2 . 'status:Success';
+use constant STATUS_PARTIAL_LOGOUT => saml2 . 'status:PartialLogout';
 
 1;
 
@@ -203,4 +205,5 @@ This module provides constants which are in use by the SAML2 implementation.
         STATUS_REQUEST_DENIED
         STATUS_RESPONDER
         STATUS_SUCCESS
+        STATUS_PARTIAL_LOGOUT
     );

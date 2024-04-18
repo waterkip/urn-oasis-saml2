@@ -66,6 +66,7 @@ my %exports = (
     STATUS_REQUEST_DENIED => $saml2 . 'status:RequestDenied',
     STATUS_RESPONDER      => $saml2 . 'status:Responder',
     STATUS_SUCCESS        => $saml2 . 'status:Success',
+    STATUS_PARTIAL_LOGOUT => $saml2 . 'status:PartialLogout',
 );
 
 my @exports = sort keys %exports;
