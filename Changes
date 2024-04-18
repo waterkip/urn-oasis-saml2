@@ -1,6 +1,6 @@
 Revision history for URN-OASIS-SAML2
 
-{{$NEXT}}
+0.004     2024-04-18 19:50:56Z
 
     * Add PartialLogout status
 
