@@ -24,6 +24,7 @@ on 'develop' => sub {
   requires "Test::CPAN::Changes" => "0.19";
   requires "Test::CPAN::Meta" => "0";
   requires "Test::CPAN::Meta::JSON" => "0.16";
+  requires "Test::DistManifest" => "0";
   requires "Test::EOL" => "0";
   requires "Test::Kwalitee" => "1.21";
   requires "Test::MinimumVersion" => "0";
