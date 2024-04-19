@@ -32,6 +32,8 @@ my @nameid = qw(
     NAMEID_EMAIL
     NAMEID_TRANSIENT
     NAMEID_PERSISTENT
+    NAMEID_UNSPECIFIED
+    NAMEID_DEFAULT
 );
 
 my @urn = qw(
@@ -117,6 +119,9 @@ use constant NAMEID_FORMAT_ENTITY => saml2 . 'nameid-format-entity';
 use constant NAMEID_EMAIL         => saml2 . 'nameid-format:emailAddress';
 use constant NAMEID_TRANSIENT     => saml2 . 'nameid-format:transient';
 use constant NAMEID_PERSISTENT    => saml2 . 'nameid-format:persistent';
+use constant NAMEID_UNSPECIFIED   => saml2 . 'nameid-format:unspecified';
+use constant NAMEID_DEFAULT       => NAMEID_UNSPECIFIED;
+
 
 use constant STATUS_AUTH_FAILED    => saml2 . 'status:AuthnFailed';
 use constant STATUS_REQUESTER      => saml2 . 'status:Requester';

@@ -2,6 +2,9 @@ Revision history for URN-OASIS-SAML2
 
 {{$NEXT}}
 
+    * Add NAMEID_UNSPECIFIED and NAMEID_DEFAULT to the module.
+      NAMEID_DEFAULT is an alias for NAMEID_UNSPECIFIED
+
 0.004     2024-04-18 19:50:56Z
 
     * Add PartialLogout status
