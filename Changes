@@ -1,6 +1,6 @@
 Revision history for URN-OASIS-SAML2
 
-{{$NEXT}}
+0.006     2024-09-15 03:49:10Z
 
     * Undo NAMEID_FORMAT changes from v0.004 as they are described in
       https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf, p 76
