@@ -66,8 +66,7 @@ my %exports = (
     NAMEID_FORMAT_ENTITY => $saml2 . 'nameid-format-entity',
     NAMEID_TRANSIENT     => $saml2 . 'nameid-format:transient',
     NAMEID_PERSISTENT    => $saml2 . 'nameid-format:persistent',
-    NAMEID_DEFAULT       => $saml2 . 'nameid-format:unspecified',
-    NAMEID_UNSPECIFIED   => $saml2 . 'nameid-format:unspecified',
+    NAMEID_DEFAULT       => $saml1_1 . 'nameid-format:unspecified',
 
     STATUS_AUTH_FAILED    => $saml2 . 'status:AuthnFailed',
     STATUS_REQUESTER      => $saml2 . 'status:Requester',
