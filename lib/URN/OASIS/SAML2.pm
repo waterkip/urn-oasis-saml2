@@ -124,7 +124,7 @@ use constant NAMEID_UNSPECIFIED                   => saml1_1 . 'nameid-format:un
 use constant NAMEID_X509_SUBJECT_NAME             => saml1_1 . 'nameid-format:X509SubjectName';
 use constant NAMEID_WINDOWS_DOMAIN_QUALIFIED_NAME => saml1_1 . 'nameid-format:WindowsDomainQualifiedName';
 
-use constant NAMEID_FORMAT_ENTITY => saml2 . 'nameid-format-entity';
+use constant NAMEID_FORMAT_ENTITY => saml2 . 'nameid-format:entity';
 use constant NAMEID_TRANSIENT     => saml2 . 'nameid-format:transient';
 use constant NAMEID_PERSISTENT    => saml2 . 'nameid-format:persistent';
 use constant NAMEID_DEFAULT       => NAMEID_UNSPECIFIED;
