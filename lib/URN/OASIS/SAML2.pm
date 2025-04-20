@@ -30,6 +30,7 @@ my @nameid = qw(
     NAMEID_FORMAT
     NAMEID_FORMAT_ENTITY
     NAMEID_ENTITY
+    NAMEID_KERBEROS
     NAMEID_EMAIL
     NAMEID_TRANSIENT
     NAMEID_PERSISTENT
@@ -126,6 +127,7 @@ use constant NAMEID_X509_SUBJECT_NAME             => saml1_1 . 'nameid-format:X5
 use constant NAMEID_WINDOWS_DOMAIN_QUALIFIED_NAME => saml1_1 . 'nameid-format:WindowsDomainQualifiedName';
 
 use constant NAMEID_FORMAT_ENTITY => saml2 . 'nameid-format:entity';
+use constant NAMEID_KERBEROS      => saml2 . 'nameid-format:kerberos';
 use constant NAMEID_TRANSIENT     => saml2 . 'nameid-format:transient';
 use constant NAMEID_PERSISTENT    => saml2 . 'nameid-format:persistent';
 use constant NAMEID_DEFAULT       => NAMEID_UNSPECIFIED;
@@ -207,6 +209,7 @@ This module provides constants which are in use by the SAML2 implementation.
     use URN::OASIS::SAML2 qw(
         NAMEID_EMAIL
         NAMEID_ENTITY
+        NAMEID_KERBEROS
         NAMEID_TRANSIENT
         NAMEID_PERSISTENT
         NAMEID_UNSPECIFIED
