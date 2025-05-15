@@ -2,6 +2,9 @@ Revision history for URN-OASIS-SAML2
 
 {{$NEXT}}
 
+    * Fix Inconsistent NAMEID name
+    * Add NAMEID_KERBEROS
+
 0.006     2024-09-15 03:49:10Z
 
     * Undo NAMEID_FORMAT changes from v0.004 as they are described in
